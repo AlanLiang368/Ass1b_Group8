@@ -13,19 +13,11 @@ const tablecolumns = [
   },
   {
     Header: "Pub. Year",
-    accessor: "pubyear",
+    accessor: "publishYear",
   },
   {
     Header: "DOI",
     accessor: "doi",
-  },
-  {
-    Header: "Claimed Benefit",
-    accessor: "claim",
-  },
-  {
-    Header: "Level of Evidence",
-    accessor: "evidence",
   },
 ];
 
