@@ -1,9 +1,13 @@
 
 const connectDB = require('../../config/db');
+const mongoose = require("mongoose");
 const {ArticlesService} = require("../../modules/articles/articles.service");
 beforeAll(() => {
   connectDB();
 });
+afterAll(() => {
+  mongoose.connection.close();
+})
 
 it("Test create article service", async () => {
   const newArticle = {
