@@ -7,9 +7,15 @@ class ArticlesService {
     return ArticleModel.findByIdAndDelete(article_id);
   }
 
-  async getArticles(page = 1, pageSize = 10) {
-    let skip = (page - 1) * pageSize;
-    return ArticleModel.find();
+  async getArticles(page = 1, pageSize = 10, title = '', sePractice = '') {
+    return ArticleModel.find({
+      title: {
+        $regex: new RegExp(`.*${title}.*`)
+      },
+      sePractice: {
+        $regex: new RegExp(`.*${sePractice}.*`)
+      }
+    });
   }
 
   async createArticle(article) {

@@ -4,8 +4,8 @@ class ArticlesController {
 
   async getArticles(req, res) {
     try {
-      const { page, pageSize } = req.query;
-      const articles = await ArticlesService.getArticles(page, pageSize);
+      const { page, pageSize, title = '', sePractice = '' } = req.query;
+      const articles = await ArticlesService.getArticles(page, pageSize, title, sePractice);
       res.status(200).json(articles);
     } catch (err) {
       res.status(500).send(err.message);
