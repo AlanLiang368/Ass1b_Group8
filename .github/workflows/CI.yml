@@ -1,9 +1,9 @@
 name: CI_action
 on:
   push:
-    branches: [ search-articles ]
+    branches: [ main ]
   pull_request:
-    branches: [ search-articles ]
+    branches: [ main ]
 jobs:
   build:
     runs-on: ubuntu-latest
