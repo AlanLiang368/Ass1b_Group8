@@ -19,6 +19,10 @@ const tablecolumns = [
     Header: "DOI",
     accessor: "doi",
   },
+  {
+    Header: "SePractice",
+    accessor: "sePractice",
+  },
 ];
 
   module.exports = tablecolumns
