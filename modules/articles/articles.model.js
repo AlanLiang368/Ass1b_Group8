@@ -24,11 +24,11 @@ const ArticleSchema = new mongoose.Schema({
   },
   moderated: {
     type: Boolean,
-    required: true,
+    required: false,
   },
   approved: {
     type: Boolean,
-    required: true,
+    required: false,
   },
 });
 
