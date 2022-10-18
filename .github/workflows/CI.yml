@@ -1,9 +1,9 @@
 name: CI_action
 on:
   push:
-    branches: [ main ]
+    branches: [ moderate-page ]
   pull_request:
-    branches: [ main ]
+    branches: [ moderate-page ]
 jobs:
   build:
     runs-on: ubuntu-latest
