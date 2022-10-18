@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from "react";
 import Styles from "../components/tablestyle.js";
 import Table from "../components/evidencetable.js";
-import modColumns from "../components/modColumn.js";
+import adminColumn from "../components/adminColumn";
 import Dropdown from "../components/Dropdown.js";
 import {SERVER_URL} from "../config";
  
-const ModeratorPage = () => {
+const AdminPage = () => {
   const [page, setPage] = useState(1);
   const pageSize = 10;
   const [title, setTitle] = useState('');
@@ -24,13 +24,13 @@ const ModeratorPage = () => {
     }
     return (
       <div>
-        <h2>Moderator Page</h2>
+        <h2>AdminPage</h2>
         <Dropdown onSearch={handleSearch}/>
         <Styles>
-          <Table data={articles} columns={modColumns} />
+          <Table data={articles} columns={adminColumn} />
         </Styles>
       </div>
     );
 }
  
-export default ModeratorPage;
+export default AdminPage

@@ -10,6 +10,8 @@ import Home from "./pages/Home";
 import SEPractice from "./pages/SE-Practice";
 import SubmitArticle from "./pages/Submit-Article";
 import NotFoundPage from "./pages/404";
+import ModeratorPage from "./pages/ModeratorPage"
+import AdminPage from "./pages/AdminPage.js"
 
 const App = () => {
   return (
@@ -26,12 +28,20 @@ const App = () => {
           <li>
             <NavLink to="/SubmitArticle">Submit an Article</NavLink>
           </li>
+          <li>
+            <NavLink to="/ModeratorPage">Moderate an Article</NavLink>
+          </li>
+          <li>
+            <NavLink to="/AdminPage">Admin Page</NavLink>
+          </li>
         </ul>
         <div className="content">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/SEPractice" element={<SEPractice />} />
             <Route path="/SubmitArticle" element={<SubmitArticle />} />
+            <Route path="/ModeratorPage" element={<ModeratorPage />} />
+            <Route path="/AdminPage" element={<AdminPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </div>

@@ -2,7 +2,7 @@
 import Button from "@mui/material/Button";
 import "../App.css";
 
-const modColumn = [
+const adminColumn = [
   {
     Header: "Title",
     accessor: "title",
@@ -28,19 +28,10 @@ const modColumn = [
     accessor: "sePractice",
   },
   {
-    Header: "Action",
-    accessor: "action",
+    Header: "Delete",
+    accessor: "delete",
     Cell: (row) => (
       <div className="deleteButton">
-        <Button
-          style={{
-            fontSize: "12px",
-            margin: "4px",
-          }}
-          variant="contained"
-        >
-          Accept
-        </Button>
         <Button style={{
             backgroundColor: "#e11e26",
             fontSize: "12px",
@@ -50,4 +41,4 @@ const modColumn = [
   },
 ];
 
-export default modColumn;
+export default adminColumn;
