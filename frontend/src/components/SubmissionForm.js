@@ -23,7 +23,7 @@ const SubmissionForm = ({submit}) => {
       <p>
         <input data-testid={'doi'} required {...register("doi")} placeholder="DOI" />
       </p>
-
+      
       <select data-testid={'sePractice'} required {...register("sePractice")}>
         <option value="">Select SE practice...</option>
         <option value="TDD">TDD</option>

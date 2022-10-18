@@ -5,5 +5,6 @@ const router = express.Router();
 
 router.get('', ArticlesController.getArticles);
 router.post('', ArticlesController.createArticle);
+router.put('', ArticlesController.putArticles);
 
 module.exports = router;

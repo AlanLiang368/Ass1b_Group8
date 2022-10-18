@@ -9,6 +9,7 @@ const articles = [
     doi: "https://doi.org/10.1145/2601248.2601267",
     claim: "code quality improvement",
     evidence: "strong support",
+    moderated: true,
   },
   {
     _id: "2",
@@ -20,6 +21,8 @@ const articles = [
     doi: "https://doi.org/10.1145/2601248.2601267",
     claim: "product quality improvement",
     evidence: "weak support",
+    moderated: true,
+
   },
   {
     _id: "3",
@@ -31,6 +34,8 @@ const articles = [
     doi: "https://doi.org/10.1007/s10664-008-9062-z",
     claim: "product quality improvement",
     evidence: "weak support",
+    moderated: true,
+
   },
   {
     _id: "4",
@@ -42,6 +47,8 @@ const articles = [
     doi: "",
     claim: "code quality improvement",
     evidence: "strong support",
+    moderated: true,
+
   },
   {
     _id: "5",
@@ -53,6 +60,8 @@ const articles = [
     doi: "https://doi.org/10.1109/esem.2007.35",
     claim: "code quality improvement",
     evidence: "weak against",
+    moderated: true,
+  
   },
 ];
 module.exports = articles;
