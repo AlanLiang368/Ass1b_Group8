@@ -5,7 +5,7 @@ import modColumn from "../components/modColumn";
 import Dropdown from "../components/Dropdown.js";
 import { SERVER_URL } from "../config";
 
-const SEPractice = () => {
+const ModeratorPage = () => {
   const [page, setPage] = useState(1);
   const pageSize = 10;
   const [title, setTitle] = useState("");
@@ -36,4 +36,4 @@ const SEPractice = () => {
   );
 };
 
-export default SEPractice;
+export default ModeratorPage;
